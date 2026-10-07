@@ -1,0 +1,151 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"layout": { "contentSize": "720px", "wideSize": "1240px" },
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"defaultDuotone": false,
+			"palette": [
+				{ "slug": "base", "name": "Blanco cálido", "color": "#FCFAF6" },
+				{ "slug": "surface", "name": "Arena", "color": "#F4EFE6" },
+				{ "slug": "line", "name": "Línea", "color": "#E4DDD0" },
+				{ "slug": "contrast", "name": "Negro", "color": "#1B1B1B" },
+				{ "slug": "muted", "name": "Gris", "color": "#5D5A54" },
+				{ "slug": "primary", "name": "Verde", "color": "#2E7D32" },
+				{ "slug": "primary-deep", "name": "Verde profundo", "color": "#16301B" },
+				{ "slug": "accent", "name": "Rojo Casanare", "color": "#C4161C" },
+				{ "slug": "gold", "name": "Amarillo", "color": "#F5B315" },
+				{ "slug": "lime", "name": "Verde lima", "color": "#7CC242" },
+				{ "slug": "on-dark", "name": "Blanco (sobre fotos y fondos oscuros)", "color": "#FCFAF6" }
+			]
+		},
+		"spacing": {
+			"defaultSpacingSizes": false,
+			"units": ["px", "rem", "%", "vw", "vh"],
+			"spacingSizes": [
+				{ "slug": "10", "name": "XXS", "size": "0.5rem" },
+				{ "slug": "20", "name": "XS", "size": "0.75rem" },
+				{ "slug": "30", "name": "S", "size": "1rem" },
+				{ "slug": "40", "name": "M", "size": "1.5rem" },
+				{ "slug": "50", "name": "L", "size": "clamp(2rem, 3vw, 3rem)" },
+				{ "slug": "60", "name": "XL", "size": "clamp(3rem, 5vw, 5rem)" },
+				{ "slug": "70", "name": "XXL", "size": "clamp(4rem, 8vw, 8rem)" }
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": true,
+			"fontSizes": [
+				{ "slug": "xs", "name": "Etiqueta", "size": "0.8125rem", "fluid": false },
+				{ "slug": "sm", "name": "Pequeño", "size": "0.9375rem", "fluid": false },
+				{ "slug": "base", "name": "Cuerpo", "size": "1.0625rem", "fluid": { "min": "1rem", "max": "1.125rem" } },
+				{ "slug": "lg", "name": "Subtítulo", "size": "1.375rem", "fluid": { "min": "1.125rem", "max": "1.5rem" } },
+				{ "slug": "xl", "name": "Título", "size": "2.25rem", "fluid": { "min": "1.625rem", "max": "2.5rem" } },
+				{ "slug": "2xl", "name": "Destacado", "size": "3.5rem", "fluid": { "min": "2.25rem", "max": "3.75rem" } },
+				{ "slug": "hero", "name": "Portada", "size": "6rem", "fluid": { "min": "2.75rem", "max": "6.5rem" } }
+			],
+			"fontFamilies": [
+				{
+					"slug": "display",
+					"name": "Zodiak",
+					"fontFamily": "Zodiak, 'Iowan Old Style', Georgia, serif",
+					"fontFace": [
+						{ "fontFamily": "Zodiak", "fontWeight": "400", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/zodiak-400.woff2"] },
+						{ "fontFamily": "Zodiak", "fontWeight": "400", "fontStyle": "italic", "fontDisplay": "swap", "src": ["file:./assets/fonts/zodiak-400-italic.woff2"] },
+						{ "fontFamily": "Zodiak", "fontWeight": "700", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/zodiak-700.woff2"] }
+					]
+				},
+				{
+					"slug": "hand",
+					"name": "Kalam (manuscrita del eslogan)",
+					"fontFamily": "Kalam, 'Comic Neue', cursive",
+					"fontFace": [
+						{ "fontFamily": "Kalam", "fontWeight": "400", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/kalam-400.woff2"] },
+						{ "fontFamily": "Kalam", "fontWeight": "700", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/kalam-700.woff2"] }
+					]
+				},
+				{
+					"slug": "body",
+					"name": "General Sans",
+					"fontFamily": "'General Sans', 'Segoe UI', system-ui, sans-serif",
+					"fontFace": [
+						{ "fontFamily": "General Sans", "fontWeight": "400", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/general-sans-400.woff2"] },
+						{ "fontFamily": "General Sans", "fontWeight": "500", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/general-sans-500.woff2"] },
+						{ "fontFamily": "General Sans", "fontWeight": "600", "fontStyle": "normal", "fontDisplay": "swap", "src": ["file:./assets/fonts/general-sans-600.woff2"] }
+					]
+				}
+			]
+		},
+		"custom": {
+			"radius": { "sm": "4px", "md": "10px", "lg": "18px" },
+			"transition": "180ms cubic-bezier(0.16, 1, 0.3, 1)"
+		}
+	},
+	"styles": {
+		"color": { "background": "var:preset|color|base", "text": "var:preset|color|contrast" },
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|base",
+			"lineHeight": "1.65",
+			"fontWeight": "400"
+		},
+		"spacing": {
+			"blockGap": "1.25rem",
+			"padding": { "left": "clamp(1.25rem, 4vw, 3rem)", "right": "clamp(1.25rem, 4vw, 3rem)" }
+		},
+		"elements": {
+			"heading": {
+				"typography": { "fontFamily": "var:preset|font-family|display", "fontWeight": "400", "lineHeight": "1.1", "letterSpacing": "-0.015em" },
+				"color": { "text": "inherit" }
+			},
+			"h1": { "typography": { "fontSize": "var:preset|font-size|2xl" } },
+			"h2": { "typography": { "fontSize": "var:preset|font-size|xl" } },
+			"h3": { "typography": { "fontSize": "var:preset|font-size|lg", "fontFamily": "var:preset|font-family|body", "fontWeight": "600", "lineHeight": "1.3", "letterSpacing": "0" } },
+			"h4": { "typography": { "fontSize": "var:preset|font-size|base", "fontFamily": "var:preset|font-family|body", "fontWeight": "600", "letterSpacing": "0" } },
+			"link": {
+				"color": { "text": "currentColor" },
+				"typography": { "textDecoration": "underline" },
+				":hover": { "color": { "text": "var:preset|color|accent" } }
+			},
+			"button": {
+				"color": { "background": "var:preset|color|accent", "text": "var:preset|color|base" },
+				"typography": { "fontFamily": "var:preset|font-family|body", "fontSize": "var:preset|font-size|sm", "fontWeight": "600", "letterSpacing": "0.01em" },
+				"border": { "radius": "999px" },
+				"spacing": { "padding": { "top": "0.85rem", "bottom": "0.85rem", "left": "1.5rem", "right": "1.5rem" } },
+				":hover": { "color": { "background": "var:preset|color|contrast", "text": "var:preset|color|base" } },
+				":focus": { "outline": { "color": "var:preset|color|gold", "offset": "3px", "style": "solid", "width": "2px" } }
+			},
+			"caption": { "typography": { "fontSize": "var:preset|font-size|xs" }, "color": { "text": "var:preset|color|muted" } }
+		},
+		"blocks": {
+			"core/navigation": { "typography": { "fontSize": "var:preset|font-size|sm", "fontWeight": "500" } },
+			"core/site-tagline": { "typography": { "fontFamily": "var:preset|font-family|hand", "fontWeight": "700" }, "color": { "text": "var:preset|color|accent" } },
+			"core/site-title": { "typography": { "fontFamily": "var:preset|font-family|display", "fontSize": "var:preset|font-size|lg" } },
+			"core/quote": {
+				"typography": { "fontFamily": "var:preset|font-family|display", "fontSize": "var:preset|font-size|xl", "fontStyle": "italic", "lineHeight": "1.25" },
+				"border": { "left": { "color": "var:preset|color|gold", "width": "3px", "style": "solid" } },
+				"spacing": { "padding": { "left": "1.5rem" } }
+			},
+			"core/pullquote": {
+				"typography": { "fontFamily": "var:preset|font-family|display", "fontSize": "var:preset|font-size|2xl", "fontStyle": "italic", "lineHeight": "1.15" },
+				"border": { "width": "0" }
+			},
+			"core/separator": { "color": { "text": "var:preset|color|line" }, "border": { "width": "1px" } },
+			"core/post-title": { "typography": { "fontFamily": "var:preset|font-family|display" } },
+			"core/post-date": { "typography": { "fontSize": "var:preset|font-size|xs", "textTransform": "uppercase", "letterSpacing": "0.08em" }, "color": { "text": "var:preset|color|muted" } },
+			"core/image": { "border": { "radius": "var:custom|radius|md" } },
+			"core/cover": { "border": { "radius": "0" } }
+		}
+	},
+	"templateParts": [
+		{ "name": "header", "title": "Encabezado", "area": "header" },
+		{ "name": "footer", "title": "Pie de página", "area": "footer" }
+	],
+	"customTemplates": [
+		{ "name": "page-wide", "title": "Página ancha (sin título)", "postTypes": ["page"] }
+	]
+}
